@@ -1,0 +1,19 @@
+% Vygenerováno skriptem vysledky.py z výsledků hodnocení. Čísla odpovídají tabulkám.
+% Při změně dat spusťte skript znovu; ruční úpravy tohoto souboru se tím přepíšou.
+\section{Výsledky}
+\label{sec:vysledky}
+
+Tabulka~\ref{tab:vysledky} a~obrázek~\ref{fig:m1} shrnují výsledky 3~systémů na testovací sadě (10~vět, každá zadaná v~každé podmínce promptu jednou). Hlavní metrika M1 udává podíl vět, u~nichž odpověď obsahovala úplnou a~přesnou množinu podob všech víceznačných slov a~žádnou závorku navíc. S~výchozím promptem (P1) byla M1 mezi 10 a~20~\%, se strukturovaným (P2) mezi 10 a~80~\% a~s~optimalizovaným (P3) mezi 20 a~100~\%. Nejvyšší hodnotu, 100~\%, má Gemini (P3).
+
+Hypotéza předpokládá, že strukturovaný prompt zvýší M1 oproti výchozímu. Na stejných větách se M1 mezi P1 a~P2 zvýšila u~2 z~3 systémů a~nevážený průměr změny je $+$26{,}7~p.~b. (ChatGPT 0, Gemini $+$70, Claude $+$10; tabulka~\ref{tab:efekt-promptu}). Kritérium stanovené v~hypotéze, tedy zlepšení souhrnně i~u~většiny systémů, je v~těchto datech splněno. Optimalizovaný prompt změnil M1 oproti strukturovanému v~průměru o~$+$20~p.~b. (zlepšení u~3 z~3 systémů; ChatGPT $+$10, Gemini $+$20, Claude $+$30).
+
+Nejistotu skóre vyjadřujeme 95\% Wilsonovými intervaly \cite{wilson1927}. Popisují nejistotu danou malým počtem vět, nikoli kolísání odpovědí při opakovaném zadání. Při 10~větách jsou intervaly široké, od 27{,}8 do 51{,}9~p.~b. Nepřekrývají se pouze intervaly těchto dvojic: ChatGPT a~Gemini (P2), ChatGPT a~Gemini (P3). Rozdíly mezi systémy proto uvádíme jako pozorování na této sadě, ne jako doklad obecné převahy některého z~nich.
+
+Každá věta byla v~každé podmínce zadána jednou, analýza opakovaných běhů proto není relevantní. Technická selhání služby se v~hodnocených bězích nevyskytla.
+
+Alternativní vysvětlení říká, že strukturovaný prompt jen zvýší ochotu označovat slova za víceznačná. Odpovědí, v~nichž systém dal do závorky slovo, které víceznačné není, bylo s~P1 1 z~30, s~P2 2 z~30 a~s~P3 0 z~30 (obrázek~\ref{fig:falesne}). Takových odpovědí se strukturovaným promptem přibylo, alternativní vysvětlení proto nelze vyloučit. Odpovědí porušujících formát (víc řádků nebo neplatná závorka) bylo s~P1 6, s~P2 10 a~s~P3 4; počítají se jako chybné.
+
+Porovnání kvality a~úsilí ukazují tabulka~\ref{tab:usili} a~obrázek~\ref{fig:latence}. Výchozí prompt má 763 znaků, strukturovaný 3635 a~optimalizované 3114 až 5504. Ladění optimalizovaného promptu navíc stálo u~každého systému 30 vývojových a~validačních dotazů. Medián doby do prvního textu odpovědi (M3) se mezi P1 a~P3 změnil takto: ChatGPT z~1{,}3 na 1{,}6~s; Gemini z~6{,}5 na 13{,}2~s; Claude z~2{,}1 na 4{,}6~s. Vyšší přesnost optimalizovaného promptu je tedy třeba vážit proti delšímu promptu, času na ladění a~době odezvy; metriky neslučujeme do jednoho skóre.
+
+\input{vystupy/tabulky.tex}
+\input{vystupy/obrazky.tex}

@@ -1,0 +1,59 @@
+% Vygenerováno skriptem vysledky.py — neupravujte ručně, raději skript spusťte znovu.
+% Vyžaduje balíčky booktabs a tabularx (v mereni.tex už jsou).
+
+\begin{table}[htbp]
+\centering\small
+\caption{Výsledky na testovací sadě: M1 (úplná a přesná množina podob), M2 (správnost zbytku věty), odpovědi s falešně označenou víceznačností, odpovědi porušující formát (víc řádků nebo neplatná závorka; počítají se jako chybné v~M1 i~M2) a M3 (medián doby do prvního textu). IS jsou 95\% Wilsonovy intervaly; popisují nejistotu mezi úlohami, ne variabilitu opakovaného generování.}
+\label{tab:vysledky}
+\begin{tabular}{@{}llcccccc@{}}
+\toprule
+Systém & Prompt & M1 & M1 95\% IS & M2 & Falešná víc. & Formát & M3 medián [Q1--Q3] \\
+ & & (úloh) & (\%) & (úloh) & (odpovědí) & (chybných) & (s) \\
+\midrule
+ChatGPT & P1 & 1/10 & 1{,}8--40{,}4 & 7/10 & 0/10 & 2/10 & 1{,}3 [1{,}1--1{,}5] \\
+ & P2 & 1/10 & 1{,}8--40{,}4 & 6/10 & 1/10 & 3/10 & 1{,}2 [1{,}1--1{,}3] \\
+ & P3 & 2/10 & 5{,}7--51{,}0 & 7/10 & 0/10 & 3/10 & 1{,}6 [1{,}5--1{,}7] \\
+\addlinespace
+Gemini & P1 & 1/10 & 1{,}8--40{,}4 & 9/10 & 1/10 & 0/10 & 6{,}5 [2{,}4--7{,}5] \\
+ & P2 & 8/10 & 49{,}0--94{,}3 & 9/10 & 0/10 & 1/10 & 12{,}9 [9{,}1--18{,}5] \\
+ & P3 & 10/10 & 72{,}2--100{,}0 & 10/10 & 0/10 & 0/10 & 13{,}2 [9{,}8--25{,}3] \\
+\addlinespace
+Claude & P1 & 2/10 & 5{,}7--51{,}0 & 6/10 & 0/10 & 4/10 & 2{,}1 [1{,}6--3{,}5] \\
+ & P2 & 3/10 & 10{,}8--60{,}3 & 3/10 & 1/10 & 6/10 & 2{,}7 [1{,}6--5{,}6] \\
+ & P3 & 6/10 & 31{,}3--83{,}2 & 9/10 & 0/10 & 1/10 & 4{,}6 [3{,}2--7{,}0] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering\small
+\caption{Změna M1 mezi podmínkami promptu na stejných úlohách (testovací sada), v~procentních bodech. V~závorce počet úloh, které se zlepšily\,/\,zhoršily. Průměr je nevážený přes systémy; bez testu významnosti.}
+\label{tab:efekt-promptu}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Systém & P1 $\rightarrow$ P2 & P2 $\rightarrow$ P3 & P1 $\rightarrow$ P3 \\
+\midrule
+ChatGPT & 0 (0\,/\,0) & $+$10 (1\,/\,0) & $+$10 (1\,/\,0) \\
+Gemini & $+$70 (7\,/\,0) & $+$20 (2\,/\,0) & $+$90 (9\,/\,0) \\
+Claude & $+$10 (3\,/\,2) & $+$30 (3\,/\,0) & $+$40 (4\,/\,0) \\
+\midrule
+Průměr systémů & $+$27 & $+$20 & $+$47 \\
+Zlepšených systémů & 2 z 3 & 3 z 3 & 3 z 3 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+\centering\small
+\caption{Úsilí: označení modelu viditelné v~rozhraní, délka promptu ve znacích bez testované věty a~zmrazená verze optimalizovaného promptu. Ladění P3 navíc u~každého systému stálo 30 vývojových a~validačních dotazů.}
+\label{tab:usili}
+\begin{tabular}{@{}llrrrc@{}}
+\toprule
+Systém & Model & P1 & P2 & P3 & Verze P3 \\
+\midrule
+ChatGPT & GPT-6 Luna & 763 & 3635 & 4583 & v2 \\
+Gemini & 3.8 Flash-Lite & 763 & 3635 & 3114 & v5 \\
+Claude & Sonnet 5.5 & 763 & 3635 & 5504 & v6 \\
+\bottomrule
+\end{tabular}
+\end{table}

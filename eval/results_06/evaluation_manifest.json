@@ -1,0 +1,1019 @@
+{
+  "script_version": "1.0.0",
+  "protocol_version": "CZAI-1.0",
+  "evaluated_at_utc": "2026-10-13T17:39:34.075Z",
+  "node_version": "v22.19.0",
+  "config": {
+    "protocol_version": "CZAI-1.0",
+    "cases": "cases.jsonl",
+    "runs": "runs.jsonl",
+    "reviews": "reviews.jsonl",
+    "out": "results",
+    "seed": 42,
+    "max_combinations": 10000,
+    "allow_illustrative_references": false,
+    "typographic_equivalences": [],
+    "groups": [
+      {
+        "product": "ChatGPT",
+        "model_label": "GPT-6 Luna",
+        "interface": "web",
+        "prompt_condition": "baseline",
+        "prompt_version": "v1",
+        "collection_protocol_version": "v1",
+        "timing_method": "web_monotonic",
+        "first_attempt": 1,
+        "task_ids": [
+          "test01",
+          "test02",
+          "test03",
+          "test04",
+          "test05",
+          "test06",
+          "test07",
+          "test08",
+          "test09",
+          "test10"
+        ]
+      },
+      {
+        "product": "ChatGPT",
+        "model_label": "GPT-6 Luna",
+        "interface": "web",
+        "prompt_condition": "structured",
+        "prompt_version": "v1",
+        "collection_protocol_version": "v1",
+        "timing_method": "web_monotonic",
+        "first_attempt": 1,
+        "task_ids": [
+          "test01",
+          "test02",
+          "test03",
+          "test04",
+          "test05",
+          "test06",
+          "test07",
+          "test08",
+          "test09",
+          "test10"
+        ]
+      },
+      {
+        "product": "ChatGPT",
+        "model_label": "GPT-6 Luna",
+        "interface": "web",
+        "prompt_condition": "optimized",
+        "prompt_version": "v2",
+        "collection_protocol_version": "v1",
+        "timing_method": "web_monotonic",
+        "first_attempt": 1,
+        "task_ids": [
+          "test01",
+          "test02",
+          "test03",
+          "test04",
+          "test05",
+          "test06",
+          "test07",
+          "test08",
+          "test09",
+          "test10"
+        ]
+      },
+      {
+        "product": "Gemini",
+        "model_label": "3.8 Flash-Lite",
+        "interface": "web",
+        "prompt_condition": "baseline",
+        "prompt_version": "v1",
+        "collection_protocol_version": "v1",
+        "timing_method": "web_monotonic",
+        "first_attempt": 1,
+        "task_ids": [
+          "test01",
+          "test02",
+          "test03",
+          "test04",
+          "test05",
+          "test06",
+          "test07",
+          "test08",
+          "test09",
+          "test10"
+        ]
+      },
+      {
+        "product": "Gemini",
+        "model_label": "3.8 Flash-Lite",
+        "interface": "web",
+        "prompt_condition": "structured",
+        "prompt_version": "v1",
+        "collection_protocol_version": "v1",
+        "timing_method": "web_monotonic",
+        "first_attempt": 1,
+        "task_ids": [
+          "test01",
+          "test02",
+          "test03",
+          "test04",
+          "test05",
+          "test06",
+          "test07",
+          "test08",
+          "test09",
+          "test10"
+        ]
+      },
+      {
+        "product": "Gemini",
+        "model_label": "3.8 Flash-Lite",
+        "interface": "web",
+        "prompt_condition": "optimized",
+        "prompt_version": "v5",
+        "collection_protocol_version": "v1",
+        "timing_method": "web_monotonic",
+        "first_attempt": 1,
+        "task_ids": [
+          "test01",
+          "test02",
+          "test03",
+          "test04",
+          "test05",
+          "test06",
+          "test07",
+          "test08",
+          "test09",
+          "test10"
+        ]
+      },
+      {
+        "product": "Claude",
+        "model_label": "Sonnet 5.5",
+        "interface": "web",
+        "prompt_condition": "baseline",
+        "prompt_version": "v1",
+        "collection_protocol_version": "v1",
+        "timing_method": "web_monotonic",
+        "first_attempt": 1,
+        "task_ids": [
+          "test01",
+          "test02",
+          "test03",
+          "test04",
+          "test05",
+          "test06",
+          "test07",
+          "test08",
+          "test09",
+          "test10"
+        ]
+      },
+      {
+        "product": "Claude",
+        "model_label": "Sonnet 5.5",
+        "interface": "web",
+        "prompt_condition": "structured",
+        "prompt_version": "v1",
+        "collection_protocol_version": "v1",
+        "timing_method": "web_monotonic",
+        "first_attempt": 1,
+        "task_ids": [
+          "test01",
+          "test02",
+          "test03",
+          "test04",
+          "test05",
+          "test06",
+          "test07",
+          "test08",
+          "test09",
+          "test10"
+        ]
+      },
+      {
+        "product": "Claude",
+        "model_label": "Sonnet 5.5",
+        "interface": "web",
+        "prompt_condition": "optimized",
+        "prompt_version": "v6",
+        "collection_protocol_version": "v1",
+        "timing_method": "web_monotonic",
+        "first_attempt": 1,
+        "task_ids": [
+          "test01",
+          "test02",
+          "test03",
+          "test04",
+          "test05",
+          "test06",
+          "test07",
+          "test08",
+          "test09",
+          "test10"
+        ]
+      }
+    ]
+  },
+  "effective_output_path": "/Users/ondrej/Desktop/OneDrive_1_10-11-2026/eval/results_06",
+  "inputs": [
+    {
+      "file": "/Users/ondrej/Desktop/OneDrive_1_10-11-2026/eval/config.json",
+      "sha256": "3a774df0507eef2185fed257872b4f7cf6fb0f80122a6b3063fc67985cdd5d87"
+    },
+    {
+      "file": "/Users/ondrej/Desktop/OneDrive_1_10-11-2026/eval/cases.jsonl",
+      "sha256": "36066a503716dcd195b139f1e31a86671cdd3d880a23dd7f46856304161dbdcc"
+    },
+    {
+      "file": "/Users/ondrej/Desktop/OneDrive_1_10-11-2026/eval/runs.jsonl",
+      "sha256": "e86036624ab05da4171756a2f64abba5f4f16961ce20dafeee3a6e54580f5c7c"
+    },
+    {
+      "file": "/Users/ondrej/Desktop/OneDrive_1_10-11-2026/eval/reviews.jsonl",
+      "sha256": "ba134efd3faa26b4ae518ed02fad3aa2793d788b4c0558f9146205bc9bf1b481"
+    }
+  ],
+  "script_sha256": "a65e5654a7d0a3bbd6cfbf5388afaa27c7ec610d75471fede54015a5df5cc3e0",
+  "seed": 42,
+  "first_attempt_results_complete": true,
+  "planned_runs": 90,
+  "collected_first_attempts": 90,
+  "missing_runs": 0,
+  "all_attempts": 90,
+  "human_language_reviewed": 27,
+  "double_reviewed": 27,
+  "double_review_required": 18,
+  "reference_versions": [
+    {
+      "task_id": "dev01",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev02",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev03",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev04",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev05",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev06",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev07",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev08",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev09",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev10",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev11",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev12",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev13",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev14",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev15",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev16",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev17",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev18",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev19",
+      "version": "v1"
+    },
+    {
+      "task_id": "dev20",
+      "version": "v1"
+    },
+    {
+      "task_id": "val01",
+      "version": "v1"
+    },
+    {
+      "task_id": "val02",
+      "version": "v1"
+    },
+    {
+      "task_id": "val03",
+      "version": "v1"
+    },
+    {
+      "task_id": "val04",
+      "version": "v1"
+    },
+    {
+      "task_id": "val05",
+      "version": "v1"
+    },
+    {
+      "task_id": "val06",
+      "version": "v1"
+    },
+    {
+      "task_id": "val07",
+      "version": "v1"
+    },
+    {
+      "task_id": "val08",
+      "version": "v1"
+    },
+    {
+      "task_id": "val09",
+      "version": "v1"
+    },
+    {
+      "task_id": "val10",
+      "version": "v1"
+    },
+    {
+      "task_id": "test01",
+      "version": "v1"
+    },
+    {
+      "task_id": "test02",
+      "version": "v1"
+    },
+    {
+      "task_id": "test03",
+      "version": "v1"
+    },
+    {
+      "task_id": "test04",
+      "version": "v1"
+    },
+    {
+      "task_id": "test05",
+      "version": "v1"
+    },
+    {
+      "task_id": "test06",
+      "version": "v1"
+    },
+    {
+      "task_id": "test07",
+      "version": "v1"
+    },
+    {
+      "task_id": "test08",
+      "version": "v1"
+    },
+    {
+      "task_id": "test09",
+      "version": "v1"
+    },
+    {
+      "task_id": "test10",
+      "version": "v1"
+    }
+  ],
+  "full_review_audit": [
+    {
+      "blinded_id": "B_64f90714107503ff5520b016",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "fail",
+      "reason": "Nedodržen formát odpovědi: za větou je anglický komentář a věta podruhé (text navíc).",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Claude-P3-v6-test09-a1"
+    },
+    {
+      "blinded_id": "B_2b454d5678a88754ef449504",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Dvakrát jmenováno stejné slovo – to hodnotí M1. Mimo závorky je věta bez chyby.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P2-v1-test07-a1"
+    },
+    {
+      "blinded_id": "B_550ac93ede9d00cd46765ac5",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Porušení formátu závorek hodnotí M1. Mimo hranaté závorky je věta bez chyby (uzavřená kulatá závorka je přípustná oprava překlepu).",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P2-v1-test04-a1"
+    },
+    {
+      "blinded_id": "B_ab5062fff16f3874e2a14bf1",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Porušení formátu závorek hodnotí M1. Mimo hranaté závorky je věta bez chyby (uzavřená kulatá závorka je přípustná oprava překlepu).",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P3-v5-test04-a1"
+    },
+    {
+      "blinded_id": "B_d7262e36ef221aa27c4699d4",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Správně",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Claude-P2-v1-test04-a1"
+    },
+    {
+      "blinded_id": "B_cb9f4b3ab916a0c670af88e6",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Nenalezen další tvar slova zachována – to hodnotí M1. Mimo závorky je věta bez chyby.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Claude-P1-v1-test03-a1"
+    },
+    {
+      "blinded_id": "B_e2ae55a7e01543ef3632a3d8",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "fail",
+      "reason": "Špatný tvar odpovědi: anglický komentář a věta podruhé (text navíc), v první verzi je „jasny“ (není slovo).",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Claude-P2-v1-test07-a1"
+    },
+    {
+      "blinded_id": "B_8baf4eaca02158345ee4d903",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "fail",
+      "reason": "Vidél není slovo. Nenalezený další tvar slova lišku hodnotí M1.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Claude-P2-v1-test05-a1"
+    },
+    {
+      "blinded_id": "B_7cabcae30851ac3d0fc87cc3",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Nenalezen další tvar slova kanabinoidu – to hodnotí M1. Mimo závorky je věta bez chyby.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P2-v1-test03-a1"
+    },
+    {
+      "blinded_id": "B_9b124f6d6a95d4f2819113ae",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "fail",
+      "reason": "Nenalezen další tvar slova kanabinoidu – to hodnotí M1. Pro M2 je chyba jinde: závorka u jednoznačného „věc“ a „več“ do věty nepatří.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P2-v1-test03-a1"
+    },
+    {
+      "blinded_id": "B_d4d6418ea489f79e6b3f4542",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Nenalezen další tvar slova kanabinoidu – to hodnotí M1. Mimo závorky je věta bez chyby.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P3-v2-test03-a1"
+    },
+    {
+      "blinded_id": "B_5cb2d55d7456ce89b7425d7c",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Nenalezen další tvar slovan přeložena – to hodnotí M1. Mimo závorky je věta bez chyby (uzavřená kulatá závorka je přípustná oprava překlepu).",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P3-v2-test04-a1"
+    },
+    {
+      "blinded_id": "B_96f0740b82878002fa3a4ba9",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Správně",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P3-v5-test06-a1"
+    },
+    {
+      "blinded_id": "B_d56bce9e5700ea14710c685c",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Správně",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P1-v1-test08-a1"
+    },
+    {
+      "blinded_id": "B_118545d2d21fe5a5bc497103",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Správně",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P2-v1-test04-a1"
+    },
+    {
+      "blinded_id": "B_5b0939dd573f28d26642feac",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Správně",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P3-v2-test06-a1"
+    },
+    {
+      "blinded_id": "B_282bd703c91b8baf74cd6870",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "fail",
+      "reason": "Nenalezen další tvar slovan přeložena – to hodnotí M1. Pro M2 je chyba jinde: překlep „polokalk( tedy“ zůstal neopravený.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P1-v1-test04-a1"
+    },
+    {
+      "blinded_id": "B_e49b1c36ea7f783111414580",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Správně",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P1-v1-test01-a1"
+    },
+    {
+      "blinded_id": "B_749b7acea3c850902a07fb37",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Správně",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P2-v1-test10-a1"
+    },
+    {
+      "blinded_id": "B_7ce86a670928f28794012235",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Správně",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Claude-P3-v6-test03-a1"
+    },
+    {
+      "blinded_id": "B_4f874c45272789ac779d9200",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Nenalezen další tvar slova srazi – to hodnotí M1. Mimo závorky je věta bez chyby.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Claude-P1-v1-test02-a1"
+    },
+    {
+      "blinded_id": "B_88970ab4541a1094aca76f26",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Správně",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P2-v1-test06-a1"
+    },
+    {
+      "blinded_id": "B_e236937e90d035baca27ca46",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Správně",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P3-v5-test10-a1"
+    },
+    {
+      "blinded_id": "B_6dd53582c2c9443780f1fcaf",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Nenalezen další tvar slova sila – to hodnotí M1. Mimo závorky je věta bez chyby.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P1-v1-test09-a1"
+    },
+    {
+      "blinded_id": "B_19ec0be422776fc0704a8a26",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Vypuštěna závorka – to hodnotí M1. Mimo závorky je věta bez chyby (uzavřená kulatá závorka je přípustná oprava překlepu).",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P1-v1-test04-a1"
+    },
+    {
+      "blinded_id": "B_af53729ca4bcf6c7a95585df",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "fail",
+      "reason": "Nenalezen další tvar slova kura – to hodnotí M1. Pro M2 je chyba jinde: závorka u jednoznačného „Ta“ a „Tá“ není české slovo.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P1-v1-test08-a1"
+    },
+    {
+      "blinded_id": "B_cf7ae50eabe659baa17c16d5",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer1",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Nenalezen další tvar slova bodu – to hodnotí M1. Mimo závorky je věta bez chyby.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P1-v1-test07-a1"
+    },
+    {
+      "blinded_id": "B_5cb2d55d7456ce89b7425d7c",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Spravne",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P3-v2-test04-a1"
+    },
+    {
+      "blinded_id": "B_af53729ca4bcf6c7a95585df",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "fail",
+      "reason": "Závorka u jednoznačného slova „Ta“, přitom „Tá“ není české slovo. (Chybějící tvar „kúra“ hodnotí M1.)",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P1-v1-test08-a1"
+    },
+    {
+      "blinded_id": "B_d4d6418ea489f79e6b3f4542",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Mimo závorky bez chyby. Chybějící tvar „kanabinoidu“ hodnotí M1.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P3-v2-test03-a1"
+    },
+    {
+      "blinded_id": "B_d7262e36ef221aa27c4699d4",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Mimo závorky bez chyby. Oba tvary (přeložená/přeložena) v odpovědi jsou.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Claude-P2-v1-test04-a1"
+    },
+    {
+      "blinded_id": "B_4f874c45272789ac779d9200",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Mimo závorky bez chyby, překlep „autqo“ opraven. Chybějící tvar „sráží“ hodnotí M1.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Claude-P1-v1-test02-a1"
+    },
+    {
+      "blinded_id": "B_88970ab4541a1094aca76f26",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Spravne",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P2-v1-test06-a1"
+    },
+    {
+      "blinded_id": "B_64f90714107503ff5520b016",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "fail",
+      "reason": "Odpověď má víc řádků a anglický komentář navíc (text mimo větu). Poslední věta sama je bez chyby.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Claude-P3-v6-test09-a1"
+    },
+    {
+      "blinded_id": "B_5b0939dd573f28d26642feac",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "fail",
+      "reason": "Závorka u jednoznačného slova „mě“, přidané „mně“ neodpovídá vstupu „me“ (změněné slovo).",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P3-v2-test06-a1"
+    },
+    {
+      "blinded_id": "B_cf7ae50eabe659baa17c16d5",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Mimo závorky bez chyby. Chybějící tvar „bodů“ hodnotí M1.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P1-v1-test07-a1"
+    },
+    {
+      "blinded_id": "B_cb9f4b3ab916a0c670af88e6",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Mimo závorky bez chyby. Chybějící tvar „zachovaná“ hodnotí M1.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Claude-P1-v1-test03-a1"
+    },
+    {
+      "blinded_id": "B_e49b1c36ea7f783111414580",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Mimo závorky bez chyby. Chybějící tvar „státu“ hodnotí M1.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P1-v1-test01-a1"
+    },
+    {
+      "blinded_id": "B_7ce86a670928f28794012235",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Správně",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Claude-P3-v6-test03-a1"
+    },
+    {
+      "blinded_id": "B_8baf4eaca02158345ee4d903",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "fail",
+      "reason": "Závorka u jednoznačného slova „viděl“, přitom „vidél“ není české slovo. (Chybějící tvar „lísku“ hodnotí M1.)",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Claude-P2-v1-test05-a1"
+    },
+    {
+      "blinded_id": "B_7cabcae30851ac3d0fc87cc3",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Mimo závorky bez chyby. Chybějící tvar „kanabinoidu“ hodnotí M1.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P2-v1-test03-a1"
+    },
+    {
+      "blinded_id": "B_550ac93ede9d00cd46765ac5",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Spravne",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P2-v1-test04-a1"
+    },
+    {
+      "blinded_id": "B_2b454d5678a88754ef449504",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Spravne",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P2-v1-test07-a1"
+    },
+    {
+      "blinded_id": "B_9b124f6d6a95d4f2819113ae",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "fail",
+      "reason": "Závorka u jednoznačného slova „věc“, přitom „več“ do věty nepatří. (Chybějící tvary „kanabinoidu“ a „zachovaná“ hodnotí M1.)",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P2-v1-test03-a1"
+    },
+    {
+      "blinded_id": "B_19ec0be422776fc0704a8a26",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Mimo závorky bez chyby, uzavření závorky je přípustná oprava překlepu. Chybějící tvar „přeložená“ hodnotí M1.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P1-v1-test04-a1"
+    },
+    {
+      "blinded_id": "B_282bd703c91b8baf74cd6870",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "fail",
+      "reason": "Překlep ze vstupu zůstal neopravený („polokalk( tedy“, závorka není uzavřená). (Chybějící tvar „přeložená“ hodnotí M1.)",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P1-v1-test04-a1"
+    },
+    {
+      "blinded_id": "B_e2ae55a7e01543ef3632a3d8",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "fail",
+      "reason": "Odpověď má víc řádků a anglický komentář navíc, v prvním řádku je „jasny“ (není slovo). Poslední věta sama je bez chyby.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Claude-P2-v1-test07-a1"
+    },
+    {
+      "blinded_id": "B_d56bce9e5700ea14710c685c",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Spravne",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P1-v1-test08-a1"
+    },
+    {
+      "blinded_id": "B_96f0740b82878002fa3a4ba9",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Správne",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P3-v5-test06-a1"
+    },
+    {
+      "blinded_id": "B_118545d2d21fe5a5bc497103",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Mimo závorky bez chyby, uzavření závorky je přípustná oprava překlepu. Chybějící tvar „přeložená“ hodnotí M1.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P2-v1-test04-a1"
+    },
+    {
+      "blinded_id": "B_6dd53582c2c9443780f1fcaf",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Mimo závorky bez chyby. Chybějící tvar „sila“ hodnotí M1.",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P1-v1-test09-a1"
+    },
+    {
+      "blinded_id": "B_749b7acea3c850902a07fb37",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Spravně",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P2-v1-test10-a1"
+    },
+    {
+      "blinded_id": "B_ab5062fff16f3874e2a14bf1",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Spravne",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P3-v5-test04-a1"
+    },
+    {
+      "blinded_id": "B_e236937e90d035baca27ca46",
+      "reference_version": "v1",
+      "evaluator_id": "reviewer2",
+      "dimension": "language_correction",
+      "decision": "pass",
+      "reason": "Spravne",
+      "adjudicated": false,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "Gemini-P3-v5-test10-a1"
+    },
+    {
+      "blinded_id": "B_5b0939dd573f28d26642feac",
+      "reference_version": "v1",
+      "evaluator_id": "adjudication",
+      "dimension": "language_correction",
+      "decision": "fail",
+      "reason": "Mne je gramaticky spatne, a jde o pridani pismene",
+      "adjudicated": true,
+      "reviewed_at_utc": "2026-10-13T17:36:43Z",
+      "run_id": "ChatGPT-P3-v2-test06-a1"
+    }
+  ],
+  "warnings": [
+    "Méně než čtyři produkty."
+  ],
+  "note": "Skóre je oddělené od splnění zadání. Nevyřešené posouzení blokuje finální M2; opakované běhy nemění hlavní N. Bez bootstrapu."
+}

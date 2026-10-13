@@ -1,0 +1,211 @@
+{
+  "protocol_version": "CZAI-1.0",
+  "cases": "cases.jsonl",
+  "runs": "runs.jsonl",
+  "reviews": "reviews.jsonl",
+  "out": "results",
+  "seed": 42,
+  "max_combinations": 10000,
+  "allow_illustrative_references": false,
+  "typographic_equivalences": [],
+  "groups": [
+    {
+      "product": "ChatGPT",
+      "model_label": "GPT-6 Luna",
+      "interface": "web",
+      "prompt_condition": "baseline",
+      "prompt_version": "v1",
+      "collection_protocol_version": "v1",
+      "timing_method": "web_monotonic",
+      "first_attempt": 1,
+      "task_ids": [
+        "test01",
+        "test02",
+        "test03",
+        "test04",
+        "test05",
+        "test06",
+        "test07",
+        "test08",
+        "test09",
+        "test10"
+      ]
+    },
+    {
+      "product": "ChatGPT",
+      "model_label": "GPT-6 Luna",
+      "interface": "web",
+      "prompt_condition": "structured",
+      "prompt_version": "v1",
+      "collection_protocol_version": "v1",
+      "timing_method": "web_monotonic",
+      "first_attempt": 1,
+      "task_ids": [
+        "test01",
+        "test02",
+        "test03",
+        "test04",
+        "test05",
+        "test06",
+        "test07",
+        "test08",
+        "test09",
+        "test10"
+      ]
+    },
+    {
+      "product": "ChatGPT",
+      "model_label": "GPT-6 Luna",
+      "interface": "web",
+      "prompt_condition": "optimized",
+      "prompt_version": "v2",
+      "collection_protocol_version": "v1",
+      "timing_method": "web_monotonic",
+      "first_attempt": 1,
+      "task_ids": [
+        "test01",
+        "test02",
+        "test03",
+        "test04",
+        "test05",
+        "test06",
+        "test07",
+        "test08",
+        "test09",
+        "test10"
+      ]
+    },
+    {
+      "product": "Gemini",
+      "model_label": "3.8 Flash-Lite",
+      "interface": "web",
+      "prompt_condition": "baseline",
+      "prompt_version": "v1",
+      "collection_protocol_version": "v1",
+      "timing_method": "web_monotonic",
+      "first_attempt": 1,
+      "task_ids": [
+        "test01",
+        "test02",
+        "test03",
+        "test04",
+        "test05",
+        "test06",
+        "test07",
+        "test08",
+        "test09",
+        "test10"
+      ]
+    },
+    {
+      "product": "Gemini",
+      "model_label": "3.8 Flash-Lite",
+      "interface": "web",
+      "prompt_condition": "structured",
+      "prompt_version": "v1",
+      "collection_protocol_version": "v1",
+      "timing_method": "web_monotonic",
+      "first_attempt": 1,
+      "task_ids": [
+        "test01",
+        "test02",
+        "test03",
+        "test04",
+        "test05",
+        "test06",
+        "test07",
+        "test08",
+        "test09",
+        "test10"
+      ]
+    },
+    {
+      "product": "Gemini",
+      "model_label": "3.8 Flash-Lite",
+      "interface": "web",
+      "prompt_condition": "optimized",
+      "prompt_version": "v5",
+      "collection_protocol_version": "v1",
+      "timing_method": "web_monotonic",
+      "first_attempt": 1,
+      "task_ids": [
+        "test01",
+        "test02",
+        "test03",
+        "test04",
+        "test05",
+        "test06",
+        "test07",
+        "test08",
+        "test09",
+        "test10"
+      ]
+    },
+    {
+      "product": "Claude",
+      "model_label": "Sonnet 5.5",
+      "interface": "web",
+      "prompt_condition": "baseline",
+      "prompt_version": "v1",
+      "collection_protocol_version": "v1",
+      "timing_method": "web_monotonic",
+      "first_attempt": 1,
+      "task_ids": [
+        "test01",
+        "test02",
+        "test03",
+        "test04",
+        "test05",
+        "test06",
+        "test07",
+        "test08",
+        "test09",
+        "test10"
+      ]
+    },
+    {
+      "product": "Claude",
+      "model_label": "Sonnet 5.5",
+      "interface": "web",
+      "prompt_condition": "structured",
+      "prompt_version": "v1",
+      "collection_protocol_version": "v1",
+      "timing_method": "web_monotonic",
+      "first_attempt": 1,
+      "task_ids": [
+        "test01",
+        "test02",
+        "test03",
+        "test04",
+        "test05",
+        "test06",
+        "test07",
+        "test08",
+        "test09",
+        "test10"
+      ]
+    },
+    {
+      "product": "Claude",
+      "model_label": "Sonnet 5.5",
+      "interface": "web",
+      "prompt_condition": "optimized",
+      "prompt_version": "v6",
+      "collection_protocol_version": "v1",
+      "timing_method": "web_monotonic",
+      "first_attempt": 1,
+      "task_ids": [
+        "test01",
+        "test02",
+        "test03",
+        "test04",
+        "test05",
+        "test06",
+        "test07",
+        "test08",
+        "test09",
+        "test10"
+      ]
+    }
+  ]
+}

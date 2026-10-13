@@ -1,0 +1,1239 @@
+{
+  "development": [
+    {
+      "task_id": "dev01",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Dle obrazku byt nevypada spatne , ale to podstatne chybi.",
+      "target_word": "obrazku",
+      "context_or_files": [],
+      "task_type": "noun_number_u_uu",
+      "difficulty": "easy",
+      "difficulty_rationale": "The item contains two frequent inflectional forms and no additional complicating feature.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "obrázků",
+          "obrázku"
+        ],
+        "accepted_full_sentences": [
+          "Dle obrázků byt nevypadá špatně, ale to podstatné chybí.",
+          "Dle obrázku byt nevypadá špatně, ale to podstatné chybí."
+        ],
+        "compact_variant_template": "Dle [obrázků|obrázku] byt nevypadá špatně, ale to podstatné chybí."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "dev02",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Kdyz je od nich vsechno tak spatne , ze to do decina jezdi kupovat nemci.",
+      "target_word": "spatne",
+      "context_or_files": [],
+      "task_type": "adjective_adverb",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing adjectival and adverbial interpretations.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "špatné",
+          "špatně"
+        ],
+        "accepted_full_sentences": [
+          "Když je od nich všechno tak špatné, že to do Děčína jezdí kupovat Němci.",
+          "Když je od nich všechno tak špatně, že to do Děčína jezdí kupovat Němci."
+        ],
+        "compact_variant_template": "Když je od nich všechno tak [špatné|špatně], že to do Děčína jezdí kupovat Němci."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "dev03",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Nasi lekari pozeduji 10 % navyseni platu jinak pry odejdou.",
+      "target_word": "platu",
+      "context_or_files": [],
+      "task_type": "noun_number_u_uu",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing two noun-number interpretations from sentence context.",
+      "edge_case_type": [
+        "noisy_input_non_diacritic_error"
+      ],
+      "edge_case_rationale": "The input contains a spelling error unrelated to diacritics.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "platu",
+          "platů"
+        ],
+        "accepted_full_sentences": [
+          "Naši lékaři požadují 10 % navýšení platu, jinak prý odejdou.",
+          "Naši lékaři požadují 10 % navýšení platů, jinak prý odejdou."
+        ],
+        "compact_variant_template": "Naši lékaři požadují 10 % navýšení [platu|platů], jinak prý odejdou."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": [
+        "non_diacritic_error_in_input",
+        "reference_changes_non_diacritic_content"
+      ]
+    },
+    {
+      "task_id": "dev04",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "V poslednim vyuctovani to mas uvedene a bez problemu to funguje.",
+      "target_word": "problemu",
+      "context_or_files": [],
+      "task_type": "noun_number_u_uu",
+      "difficulty": "easy",
+      "difficulty_rationale": "The item contains two frequent inflectional forms and no additional complicating feature.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "problému",
+          "problémů"
+        ],
+        "accepted_full_sentences": [
+          "V posledním vyúčtování to máš uvedené a bez problému to funguje.",
+          "V posledním vyúčtování to máš uvedené a bez problémů to funguje."
+        ],
+        "compact_variant_template": "V posledním vyúčtování to máš uvedené a bez [problému|problémů] to funguje."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": [
+        "reference_changes_non_diacritic_content"
+      ]
+    },
+    {
+      "task_id": "dev05",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Jen stale nechapu co a proc vysetruji pote, co nekdo vleze na zeleznicni trat a necha se prejet.",
+      "target_word": "vysetruji",
+      "context_or_files": [],
+      "task_type": "finite_verb_form",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing two finite verb forms from sentence context.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "vyšetřují",
+          "vyšetřuji"
+        ],
+        "accepted_full_sentences": [
+          "Jen stále nechápu, co a proč vyšetřují poté, co někdo vleze na železniční trať a nechá se přejet.",
+          "Jen stále nechápu, co a proč vyšetřuji poté, co někdo vleze na železniční trať a nechá se přejet."
+        ],
+        "compact_variant_template": "Jen stále nechápu, co a proč [vyšetřují|vyšetřuji] poté, co někdo vleze na železniční trať a nechá se přejet."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "dev06",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Posledni dobou se mnohem vic zameruji na novinky.cz nez na idnes.",
+      "target_word": "zameruji",
+      "context_or_files": [],
+      "task_type": "finite_verb_form",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing two finite verb forms from sentence context.",
+      "edge_case_type": [
+        "web_entities_and_case_normalization"
+      ],
+      "edge_case_rationale": "The sentence contains web publication names whose capitalization must be interpreted correctly.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "zaměřují",
+          "zaměřuji"
+        ],
+        "accepted_full_sentences": [
+          "Poslední dobou se mnohem víc zaměřují na Novinky.cz než na iDNES.",
+          "Poslední dobou se mnohem víc zaměřuji na Novinky.cz než na iDNES."
+        ],
+        "compact_variant_template": "Poslední dobou se mnohem víc [zaměřují|zaměřuji] na Novinky.cz než na iDNES."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "dev07",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Policiste dnes rano kontrolovali pasy.",
+      "target_word": "pasy",
+      "context_or_files": [],
+      "task_type": "lexical_homograph",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires considering two lexically distinct interpretations.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "pasy",
+          "pásy"
+        ],
+        "accepted_full_sentences": [
+          "Policisté dnes ráno kontrolovali pasy.",
+          "Policisté dnes ráno kontrolovali pásy."
+        ],
+        "compact_variant_template": "Policisté dnes ráno kontrolovali [pasy|pásy]."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "dev08",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Presne toho se tykal muj dotaz. hadam, ze do hodiny budeme vsichni smazani.",
+      "target_word": "smazani",
+      "context_or_files": [],
+      "task_type": "adjectival_short_long_form",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing two adjectival or participial forms.",
+      "edge_case_type": [
+        "multi_sentence_context"
+      ],
+      "edge_case_rationale": "The input contains two sentences and the target occurs at the end of the second sentence.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "smazáni",
+          "smazaní"
+        ],
+        "accepted_full_sentences": [
+          "Přesně toho se týkal můj dotaz. Hádám, že do hodiny budeme všichni smazáni.",
+          "Přesně toho se týkal můj dotaz. Hádám, že do hodiny budeme všichni smazaní."
+        ],
+        "compact_variant_template": "Přesně toho se týkal můj dotaz. Hádám, že do hodiny budeme všichni [smazáni|smazaní]."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "dev09",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Soused zacal sit.",
+      "target_word": "sit",
+      "context_or_files": [],
+      "task_type": "lexical_homograph",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires considering two lexically distinct interpretations.",
+      "edge_case_type": [
+        "minimal_context"
+      ],
+      "edge_case_rationale": "The very short context permits two lexically distinct interpretations.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "sít",
+          "šít"
+        ],
+        "accepted_full_sentences": [
+          "Soused začal sít.",
+          "Soused začal šít."
+        ],
+        "compact_variant_template": "Soused začal [sít|šít]."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "dev10",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Prisla rada.",
+      "target_word": "rada",
+      "context_or_files": [],
+      "task_type": "lexical_homograph",
+      "difficulty": "hard",
+      "difficulty_rationale": "A two-word context permits three forms spanning multiple lexical or part-of-speech interpretations.",
+      "edge_case_type": [
+        "minimal_context",
+        "more_than_two_valid_answers"
+      ],
+      "edge_case_rationale": "The minimal context permits three acceptable interpretations.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "rada",
+          "řada",
+          "ráda"
+        ],
+        "accepted_full_sentences": [
+          "Přišla rada.",
+          "Přišla řada.",
+          "Přišla ráda."
+        ],
+        "compact_variant_template": "Přišla [rada|řada|ráda]."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "dev11",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Spi dobre.",
+      "target_word": "spi",
+      "context_or_files": [],
+      "task_type": "finite_verb_form",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing two finite verb forms from sentence context.",
+      "edge_case_type": [
+        "minimal_context"
+      ],
+      "edge_case_rationale": "The two-word context permits both imperative and indicative readings.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "spi",
+          "spí"
+        ],
+        "accepted_full_sentences": [
+          "Spi dobře.",
+          "Spí dobře."
+        ],
+        "compact_variant_template": "[Spi|Spí] dobře."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "dev12",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Hnuti zlutych vest vzniklo na protest proti zameru vlady kvuli podpore ekoprojektu zdrazit litr nafty.",
+      "target_word": "ekoprojektu",
+      "context_or_files": [],
+      "task_type": "noun_number_u_uu",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing two noun-number interpretations from sentence context.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "ekoprojektů",
+          "ekoprojektu"
+        ],
+        "accepted_full_sentences": [
+          "Hnutí žlutých vest vzniklo na protest proti záměru vlády kvůli podpoře ekoprojektů zdražit litr nafty.",
+          "Hnutí žlutých vest vzniklo na protest proti záměru vlády kvůli podpoře ekoprojektu zdražit litr nafty."
+        ],
+        "compact_variant_template": "Hnutí žlutých vest vzniklo na protest proti záměru vlády kvůli podpoře [ekoprojektů|ekoprojektu] zdražit litr nafty."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "dev13",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Jedine co mnel byla seminka stromu.",
+      "target_word": "stromu",
+      "context_or_files": [],
+      "task_type": "noun_number_u_uu",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing two noun-number interpretations from sentence context.",
+      "edge_case_type": [
+        "noisy_input_non_diacritic_error"
+      ],
+      "edge_case_rationale": "The input contains a spelling error unrelated to diacritics.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "stromu",
+          "stromů"
+        ],
+        "accepted_full_sentences": [
+          "Jediné, co měl, byla semínka stromu.",
+          "Jediné, co měl, byla semínka stromů."
+        ],
+        "compact_variant_template": "Jediné, co měl, byla semínka [stromu|stromů]."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": [
+        "non_diacritic_error_in_input",
+        "reference_changes_non_diacritic_content"
+      ]
+    },
+    {
+      "task_id": "dev14",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Vila stala na kopci nad rekou.",
+      "target_word": "vila",
+      "context_or_files": [],
+      "task_type": "lexical_homograph",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires considering two lexically distinct interpretations.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "vila",
+          "víla"
+        ],
+        "accepted_full_sentences": [
+          "Vila stála na kopci nad řekou.",
+          "Víla stála na kopci nad řekou."
+        ],
+        "compact_variant_template": "[Vila|Víla] stála na kopci nad řekou."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "dev15",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Byla to jeho draha.",
+      "target_word": "draha",
+      "context_or_files": [],
+      "task_type": "lexical_homograph",
+      "difficulty": "hard",
+      "difficulty_rationale": "One accepted reading is elliptical and contextually marked.",
+      "edge_case_type": [
+        "elliptical_reading"
+      ],
+      "edge_case_rationale": "One acceptable interpretation requires an elliptical reading.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "dráha",
+          "drahá"
+        ],
+        "accepted_full_sentences": [
+          "Byla to jeho dráha.",
+          "Byla to jeho drahá."
+        ],
+        "compact_variant_template": "Byla to jeho [dráha|drahá]."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "dev16",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Jejich rady rychle ridly.",
+      "target_word": "rady",
+      "context_or_files": [],
+      "task_type": "lexical_homograph",
+      "difficulty": "hard",
+      "difficulty_rationale": "The target has three contextually interpretable forms with distinct lexical meanings.",
+      "edge_case_type": [
+        "more_than_two_valid_answers"
+      ],
+      "edge_case_rationale": "The context permits three lexically distinct interpretations.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "rady",
+          "řady",
+          "řády"
+        ],
+        "accepted_full_sentences": [
+          "Jejich rady rychle řídly.",
+          "Jejich řady rychle řídly.",
+          "Jejich řády rychle řídly."
+        ],
+        "compact_variant_template": "Jejich [rady|řady|řády] rychle řídly."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "dev17",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Ta vila ho naprosto okouzlila.",
+      "target_word": "vila",
+      "context_or_files": [],
+      "task_type": "lexical_homograph",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires considering two lexically distinct interpretations.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "vila",
+          "víla"
+        ],
+        "accepted_full_sentences": [
+          "Ta vila ho naprosto okouzlila.",
+          "Ta víla ho naprosto okouzlila."
+        ],
+        "compact_variant_template": "Ta [vila|víla] ho naprosto okouzlila."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "dev18",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Pro kamarady se dokazi obetovat a pomoci jim.",
+      "target_word": "dokazi",
+      "context_or_files": [],
+      "task_type": "finite_verb_form",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing two finite verb forms from sentence context.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "dokáži",
+          "dokáží"
+        ],
+        "accepted_full_sentences": [
+          "Pro kamarády se dokáži obětovat a pomoci jim.",
+          "Pro kamarády se dokáží obětovat a pomoci jim."
+        ],
+        "compact_variant_template": "Pro kamarády se [dokáži|dokáží] obětovat a pomoci jim."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "dev19",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Peclive zkoumali jeji tvar.",
+      "target_word": "tvar",
+      "context_or_files": [],
+      "task_type": "lexical_homograph",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires considering two lexically distinct interpretations.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "tvar",
+          "tvář"
+        ],
+        "accepted_full_sentences": [
+          "Pečlivě zkoumali její tvar.",
+          "Pečlivě zkoumali její tvář."
+        ],
+        "compact_variant_template": "Pečlivě zkoumali její [tvar|tvář]."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "dev20",
+      "development_validation_test_split": "development",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Protoze my uz byla trochu zima sla jsem dovnitr a dala si caj a strudl ktery upekla babicka.",
+      "target_word": "strudl",
+      "context_or_files": [],
+      "task_type": "orthographic_variant",
+      "difficulty": "hard",
+      "difficulty_rationale": "The input contains additional noise and the target has two accepted spelling variants.",
+      "edge_case_type": [
+        "noisy_input_non_diacritic_error",
+        "orthographic_variant_same_lexeme"
+      ],
+      "edge_case_rationale": "The input contains additional grammatical noise and the target has two accepted spelling variants.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "štrůdl",
+          "štrúdl"
+        ],
+        "accepted_full_sentences": [
+          "Protože mi už byla trochu zima, šla jsem dovnitř a dala si čaj a štrůdl, který upekla babička.",
+          "Protože mi už byla trochu zima, šla jsem dovnitř a dala si čaj a štrúdl, který upekla babička."
+        ],
+        "compact_variant_template": "Protože mi už byla trochu zima, šla jsem dovnitř a dala si čaj a [štrůdl|štrúdl], který upekla babička."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": [
+        "non_diacritic_error_in_input",
+        "reference_changes_non_diacritic_content"
+      ]
+    }
+  ],
+  "validation": [
+    {
+      "task_id": "val01",
+      "development_validation_test_split": "validation",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Podle zaznamu na jeho facebookovem profilu privital zvoleni donalda trumpa americkym prezidentem.",
+      "target_word": "zaznamu",
+      "context_or_files": [],
+      "task_type": "noun_number_u_uu",
+      "difficulty": "easy",
+      "difficulty_rationale": "The item contains two frequent inflectional forms and no additional complicating feature.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "záznamů",
+          "záznamu"
+        ],
+        "accepted_full_sentences": [
+          "Podle záznamů na jeho facebookovém profilu přivítal zvolení Donalda Trumpa americkým prezidentem.",
+          "Podle záznamu na jeho facebookovém profilu přivítal zvolení Donalda Trumpa americkým prezidentem."
+        ],
+        "compact_variant_template": "Podle [záznamů|záznamu] na jeho facebookovém profilu přivítal zvolení Donalda Trumpa americkým prezidentem."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "val02",
+      "development_validation_test_split": "validation",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Je zbarveny do krasne modre barvy.",
+      "target_word": "krasne",
+      "context_or_files": [],
+      "task_type": "adjective_adverb",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing adjectival and adverbial interpretations.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "krásně",
+          "krásné"
+        ],
+        "accepted_full_sentences": [
+          "Je zbarvený do krásně modré barvy.",
+          "Je zbarvený do krásné modré barvy."
+        ],
+        "compact_variant_template": "Je zbarvený do [krásně|krásné] modré barvy."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "val03",
+      "development_validation_test_split": "validation",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Me se neptaly jak se jmenuji.",
+      "target_word": "jmenuji",
+      "context_or_files": [],
+      "task_type": "finite_verb_form",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing two finite verb forms from sentence context.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "jmenuji",
+          "jmenují"
+        ],
+        "accepted_full_sentences": [
+          "Mě se neptaly, jak se jmenuji.",
+          "Mě se neptaly, jak se jmenují."
+        ],
+        "compact_variant_template": "Mě se neptaly, jak se [jmenuji|jmenují]."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "val04",
+      "development_validation_test_split": "validation",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Tak se mi zda podle nazoru, ze iveta byla svetice a za vse muze ten a ten, ale ona za to nemuze.",
+      "target_word": "nazoru",
+      "context_or_files": [],
+      "task_type": "noun_number_u_uu",
+      "difficulty": "hard",
+      "difficulty_rationale": "A long and syntactically noisy sentence permits two noun-number interpretations.",
+      "edge_case_type": [
+        "malformed_syntax"
+      ],
+      "edge_case_rationale": "The long input contains malformed syntax in addition to the target ambiguity.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "názorů",
+          "názoru"
+        ],
+        "accepted_full_sentences": [
+          "Tak se mi zdá podle názorů, že Iveta byla světice a za vše může ten a ten, ale ona za to nemůže.",
+          "Tak se mi zdá podle názoru, že Iveta byla světice a za vše může ten a ten, ale ona za to nemůže."
+        ],
+        "compact_variant_template": "Tak se mi zdá podle [názorů|názoru], že Iveta byla světice a za vše může ten a ten, ale ona za to nemůže."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": [
+        "syntactic_anomaly"
+      ]
+    },
+    {
+      "task_id": "val05",
+      "development_validation_test_split": "validation",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Z lodi spatrili mys.",
+      "target_word": "mys",
+      "context_or_files": [],
+      "task_type": "lexical_homograph",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires considering two lexically distinct interpretations.",
+      "edge_case_type": [
+        "rare_or_domain_specific_term",
+        "multiple_ambiguous_tokens"
+      ],
+      "edge_case_rationale": "The sentence combines a rare geographical term with an additional number ambiguity outside the target word.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "mys",
+          "myš",
+          "lodi",
+          "lodí"
+        ],
+        "accepted_full_sentences": [
+          "Z lodi spatřili mys.",
+          "Z lodí spatřili mys.",
+          "Z lodi spatřili myš.",
+          "Z lodí spatřili myš."
+        ],
+        "compact_variant_template": "Z [lodi|lodí] spatřili [mys|myš]."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "val06",
+      "development_validation_test_split": "validation",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Vina tohoto muze brzy zmizela.",
+      "target_word": "vina",
+      "context_or_files": [],
+      "task_type": "lexical_homograph",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires considering two lexically distinct interpretations.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "vina",
+          "vína"
+        ],
+        "accepted_full_sentences": [
+          "Vina tohoto muže brzy zmizela.",
+          "Vína tohoto muže brzy zmizela."
+        ],
+        "compact_variant_template": "[Vina|Vína] tohoto muže brzy zmizela."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "val07",
+      "development_validation_test_split": "validation",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Jeho matka byla pradlena.",
+      "target_word": "pradlena",
+      "context_or_files": [],
+      "task_type": "lexical_homograph",
+      "difficulty": "hard",
+      "difficulty_rationale": "The distinction depends on two relatively uncommon lexical interpretations.",
+      "edge_case_type": [
+        "rare_or_domain_specific_term"
+      ],
+      "edge_case_rationale": "The target distinguishes two relatively uncommon occupation terms.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "pradlena",
+          "přadlena"
+        ],
+        "accepted_full_sentences": [
+          "Jeho matka byla pradlena.",
+          "Jeho matka byla přadlena."
+        ],
+        "compact_variant_template": "Jeho matka byla [pradlena|přadlena]."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "val08",
+      "development_validation_test_split": "validation",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Mate pravdu, opakuji to.",
+      "target_word": "opakuji",
+      "context_or_files": [],
+      "task_type": "finite_verb_form",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing two finite verb forms from sentence context.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "opakuji",
+          "opakují"
+        ],
+        "accepted_full_sentences": [
+          "Máte pravdu, opakuji to.",
+          "Máte pravdu, opakují to."
+        ],
+        "compact_variant_template": "Máte pravdu, [opakuji|opakují] to."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "val09",
+      "development_validation_test_split": "validation",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Pri registraci jsem zatrhla, ze chci podrobny vypis v elektronicke podobe, ktera neni financovana.",
+      "target_word": "financovana",
+      "context_or_files": [],
+      "task_type": "adjectival_short_long_form",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing two adjectival or participial forms.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "financovaná",
+          "financována"
+        ],
+        "accepted_full_sentences": [
+          "Při registraci jsem zatrhla, že chci podrobný výpis v elektronické podobě, která není financovaná.",
+          "Při registraci jsem zatrhla, že chci podrobný výpis v elektronické podobě, která není financována."
+        ],
+        "compact_variant_template": "Při registraci jsem zatrhla, že chci podrobný výpis v elektronické podobě, která není [financovaná|financována]."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "val10",
+      "development_validation_test_split": "validation",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Cena teto pece byla necekane vysoka.",
+      "target_word": "pece",
+      "context_or_files": [],
+      "task_type": "lexical_homograph",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires considering two lexically distinct interpretations.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "pece",
+          "péče"
+        ],
+        "accepted_full_sentences": [
+          "Cena této pece byla nečekaně vysoká.",
+          "Cena této péče byla nečekaně vysoká."
+        ],
+        "compact_variant_template": "Cena této [pece|péče] byla nečekaně vysoká."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    }
+  ],
+  "test": [
+    {
+      "task_id": "test01",
+      "development_validation_test_split": "test",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Doby , kdy se staty dobyvaly valkami, jsou bohudik pryc, ale i tato metoda obsazeni statu pristehovalci zpusobi valku.",
+      "target_word": "statu",
+      "context_or_files": [],
+      "task_type": "noun_number_u_uu",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing two noun-number interpretations from sentence context.",
+      "edge_case_type": [
+        "unexpected_formatting"
+      ],
+      "edge_case_rationale": "The input contains irregular spacing before punctuation.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "států",
+          "státu"
+        ],
+        "accepted_full_sentences": [
+          "Doby, kdy se státy dobývaly válkami, jsou bohudík pryč, ale i tato metoda obsazení států přistěhovalci způsobí válku.",
+          "Doby, kdy se státy dobývaly válkami, jsou bohudík pryč, ale i tato metoda obsazení státu přistěhovalci způsobí válku."
+        ],
+        "compact_variant_template": "Doby, kdy se státy dobývaly válkami, jsou bohudík pryč, ale i tato metoda obsazení [států|státu] přistěhovalci způsobí válku."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "test02",
+      "development_validation_test_split": "test",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Marka srazi autqo.",
+      "target_word": "srazi",
+      "context_or_files": [],
+      "task_type": "finite_verb_form",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing two finite verb forms from sentence context.",
+      "edge_case_type": [
+        "noisy_input_non_diacritic_error"
+      ],
+      "edge_case_rationale": "The input contains an additional typographical error outside the target word.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "sráží",
+          "srazí"
+        ],
+        "accepted_full_sentences": [
+          "Marka sráží auto.",
+          "Marka srazí auto."
+        ],
+        "compact_variant_template": "Marka [sráží|srazí] auto."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": [
+        "non_diacritic_error_in_input",
+        "reference_changes_non_diacritic_content"
+      ]
+    },
+    {
+      "task_id": "test03",
+      "development_validation_test_split": "test",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Legalizace je jedna vec, ale nulova tolerance kanabinoidu v organismu by urcite zustala zachovana jak za volantem, tak v praci.",
+      "target_word": "kanabinoidu",
+      "context_or_files": [],
+      "task_type": "noun_number_u_uu",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing two noun-number interpretations from sentence context.",
+      "edge_case_type": [
+        "multiple_ambiguous_tokens"
+      ],
+      "edge_case_rationale": "Besides the target word, the short/long participle form zachována/zachovaná is also ambiguous.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "kanabinoidu",
+          "kanabinoidů",
+          "zachována",
+          "zachovaná"
+        ],
+        "accepted_full_sentences": [
+          "Legalizace je jedna věc, ale nulová tolerance kanabinoidu v organismu by určitě zůstala zachována jak za volantem, tak v práci.",
+          "Legalizace je jedna věc, ale nulová tolerance kanabinoidů v organismu by určitě zůstala zachována jak za volantem, tak v práci.",
+          "Legalizace je jedna věc, ale nulová tolerance kanabinoidu v organismu by určitě zůstala zachovaná jak za volantem, tak v práci.",
+          "Legalizace je jedna věc, ale nulová tolerance kanabinoidů v organismu by určitě zůstala zachovaná jak za volantem, tak v práci."
+        ],
+        "compact_variant_template": "Legalizace je jedna věc, ale nulová tolerance [kanabinoidu|kanabinoidů] v organismu by určitě zůstala [zachována|zachovaná] jak za volantem, tak v práci."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "test04",
+      "development_validation_test_split": "test",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Pivoteka je polokalk( tedy vyraz, jehoz jedna cast je prelozena a druha nikoli.",
+      "target_word": "prelozena",
+      "context_or_files": [],
+      "task_type": "adjectival_short_long_form",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing two adjectival or participial forms.",
+      "edge_case_type": [
+        "unexpected_formatting"
+      ],
+      "edge_case_rationale": "The input contains unexpected and incomplete punctuation.",
+      "source_or_provenance": "adapted_from_public_dataset https://github.com/ufal/bert-diacritics-restoration",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "přeložena",
+          "přeložená"
+        ],
+        "accepted_full_sentences": [
+          "Pivotéka je polokalk, tedy výraz, jehož jedna část je přeložena a druhá nikoli.",
+          "Pivotéka je polokalk, tedy výraz, jehož jedna část je přeložená a druhá nikoli."
+        ],
+        "compact_variant_template": "Pivotéka je polokalk, tedy výraz, jehož jedna část je [přeložena|přeložená] a druhá nikoli."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": [
+        "reference_changes_punctuation"
+      ]
+    },
+    {
+      "task_id": "test05",
+      "development_validation_test_split": "test",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Na zahrade videl lisku.",
+      "target_word": "lisku",
+      "context_or_files": [],
+      "task_type": "lexical_homograph",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires considering two lexically distinct interpretations.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "lišku",
+          "lísku"
+        ],
+        "accepted_full_sentences": [
+          "Na zahradě viděl lišku.",
+          "Na zahradě viděl lísku."
+        ],
+        "compact_variant_template": "Na zahradě viděl [lišku|lísku]."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "test06",
+      "development_validation_test_split": "test",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Mysli na me.",
+      "target_word": "mysli",
+      "context_or_files": [],
+      "task_type": "finite_verb_form",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires distinguishing two finite verb forms from sentence context.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "mysli",
+          "myslí"
+        ],
+        "accepted_full_sentences": [
+          "Mysli na mě.",
+          "Myslí na mě."
+        ],
+        "compact_variant_template": "[Mysli|Myslí] na mě."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "test07",
+      "development_validation_test_split": "test",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Vyznam bodu nebyl jasny.",
+      "target_word": "bodu",
+      "context_or_files": [],
+      "task_type": "noun_number_u_uu",
+      "difficulty": "easy",
+      "difficulty_rationale": "The item contains two frequent inflectional forms and no additional complicating feature.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "bodu",
+          "bodů"
+        ],
+        "accepted_full_sentences": [
+          "Význam bodu nebyl jasný.",
+          "Význam bodů nebyl jasný."
+        ],
+        "compact_variant_template": "Význam [bodu|bodů] nebyl jasný."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "test08",
+      "development_validation_test_split": "test",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Ta kura pro nej byla velmi tvrda.",
+      "target_word": "kura",
+      "context_or_files": [],
+      "task_type": "lexical_homograph",
+      "difficulty": "medium",
+      "difficulty_rationale": "The item requires considering two lexically distinct interpretations.",
+      "edge_case_type": [],
+      "edge_case_rationale": "No designated edge case.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "kůra",
+          "kúra"
+        ],
+        "accepted_full_sentences": [
+          "Ta kůra pro něj byla velmi tvrdá.",
+          "Ta kúra pro něj byla velmi tvrdá."
+        ],
+        "compact_variant_template": "Ta [kůra|kúra] pro něj byla velmi tvrdá."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "test09",
+      "development_validation_test_split": "test",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Tato ohromna sila nas vsechny prekvapila.",
+      "target_word": "sila",
+      "context_or_files": [],
+      "task_type": "lexical_homograph",
+      "difficulty": "hard",
+      "difficulty_rationale": "One accepted interpretation is a rare plural noun, creating a marked lexical contrast.",
+      "edge_case_type": [
+        "rare_or_marked_reading"
+      ],
+      "edge_case_rationale": "One acceptable interpretation is a rare or contextually marked plural noun.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "sila",
+          "síla"
+        ],
+        "accepted_full_sentences": [
+          "Tato ohromná sila nás všechny překvapila.",
+          "Tato ohromná síla nás všechny překvapila."
+        ],
+        "compact_variant_template": "Tato ohromná [sila|síla] nás všechny překvapila."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    },
+    {
+      "task_id": "test10",
+      "development_validation_test_split": "test",
+      "capability": "czech_diacritic_variant_enumeration",
+      "language": "cs",
+      "user_prompt": "Kdyz se otocil, uvidel tam spici.",
+      "target_word": "spici",
+      "context_or_files": [],
+      "task_type": "lexical_homograph",
+      "difficulty": "hard",
+      "difficulty_rationale": "One accepted interpretation is elliptical and depends on an omitted noun.",
+      "edge_case_type": [
+        "elliptical_reading"
+      ],
+      "edge_case_rationale": "One acceptable interpretation depends on an omitted noun.",
+      "source_or_provenance": "author_created",
+      "reference_answer_or_tests": {
+        "accepted_target_forms": [
+          "špici",
+          "spící"
+        ],
+        "accepted_full_sentences": [
+          "Když se otočil, uviděl tam špici.",
+          "Když se otočil, uviděl tam spící."
+        ],
+        "compact_variant_template": "Když se otočil, uviděl tam [špici|spící]."
+      },
+      "expected_properties": "The output contains all and only acceptable variants of the target word.",
+      "evaluation_method": "automatic_and_human_evaluation",
+      "data_quality_flags": []
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "split": "test",
+    "from": "baseline",
+    "to": "structured",
+    "metric": "M1",
+    "interface": "web",
+    "collection_protocol_version": "v1",
+    "timing_method": "web_monotonic",
+    "systems": [
+      {
+        "product": "ChatGPT",
+        "model": "GPT-6 Luna",
+        "difference_pp": 0
+      },
+      {
+        "product": "Gemini",
+        "model": "3.8 Flash-Lite",
+        "difference_pp": 70
+      },
+      {
+        "product": "Claude",
+        "model": "Sonnet 5.5",
+        "difference_pp": 10
+      }
+    ],
+    "mean_difference_pp": 26.666666666666668,
+    "systems_improved": 2,
+    "systems_N": 3,
+    "note": "Nevážený průměr úplných systémových rozdílů; bez testu významnosti."
+  },
+  {
+    "split": "test",
+    "from": "baseline",
+    "to": "structured",
+    "metric": "M2",
+    "interface": "web",
+    "collection_protocol_version": "v1",
+    "timing_method": "web_monotonic",
+    "systems": [
+      {
+        "product": "ChatGPT",
+        "model": "GPT-6 Luna",
+        "difference_pp": -10
+      },
+      {
+        "product": "Gemini",
+        "model": "3.8 Flash-Lite",
+        "difference_pp": 0
+      },
+      {
+        "product": "Claude",
+        "model": "Sonnet 5.5",
+        "difference_pp": -30
+      }
+    ],
+    "mean_difference_pp": -13.333333333333334,
+    "systems_improved": 0,
+    "systems_N": 3,
+    "note": "Nevážený průměr úplných systémových rozdílů; bez testu významnosti."
+  },
+  {
+    "split": "test",
+    "from": "baseline",
+    "to": "optimized",
+    "metric": "M1",
+    "interface": "web",
+    "collection_protocol_version": "v1",
+    "timing_method": "web_monotonic",
+    "systems": [
+      {
+        "product": "ChatGPT",
+        "model": "GPT-6 Luna",
+        "difference_pp": 10
+      },
+      {
+        "product": "Gemini",
+        "model": "3.8 Flash-Lite",
+        "difference_pp": 90
+      },
+      {
+        "product": "Claude",
+        "model": "Sonnet 5.5",
+        "difference_pp": 40
+      }
+    ],
+    "mean_difference_pp": 46.666666666666664,
+    "systems_improved": 3,
+    "systems_N": 3,
+    "note": "Nevážený průměr úplných systémových rozdílů; bez testu významnosti."
+  },
+  {
+    "split": "test",
+    "from": "baseline",
+    "to": "optimized",
+    "metric": "M2",
+    "interface": "web",
+    "collection_protocol_version": "v1",
+    "timing_method": "web_monotonic",
+    "systems": [
+      {
+        "product": "ChatGPT",
+        "model": "GPT-6 Luna",
+        "difference_pp": 0
+      },
+      {
+        "product": "Gemini",
+        "model": "3.8 Flash-Lite",
+        "difference_pp": 10
+      },
+      {
+        "product": "Claude",
+        "model": "Sonnet 5.5",
+        "difference_pp": 30
+      }
+    ],
+    "mean_difference_pp": 13.333333333333334,
+    "systems_improved": 2,
+    "systems_N": 3,
+    "note": "Nevážený průměr úplných systémových rozdílů; bez testu významnosti."
+  },
+  {
+    "split": "test",
+    "from": "structured",
+    "to": "optimized",
+    "metric": "M1",
+    "interface": "web",
+    "collection_protocol_version": "v1",
+    "timing_method": "web_monotonic",
+    "systems": [
+      {
+        "product": "ChatGPT",
+        "model": "GPT-6 Luna",
+        "difference_pp": 10
+      },
+      {
+        "product": "Gemini",
+        "model": "3.8 Flash-Lite",
+        "difference_pp": 20
+      },
+      {
+        "product": "Claude",
+        "model": "Sonnet 5.5",
+        "difference_pp": 30
+      }
+    ],
+    "mean_difference_pp": 20,
+    "systems_improved": 3,
+    "systems_N": 3,
+    "note": "Nevážený průměr úplných systémových rozdílů; bez testu významnosti."
+  },
+  {
+    "split": "test",
+    "from": "structured",
+    "to": "optimized",
+    "metric": "M2",
+    "interface": "web",
+    "collection_protocol_version": "v1",
+    "timing_method": "web_monotonic",
+    "systems": [
+      {
+        "product": "ChatGPT",
+        "model": "GPT-6 Luna",
+        "difference_pp": 10
+      },
+      {
+        "product": "Gemini",
+        "model": "3.8 Flash-Lite",
+        "difference_pp": 10
+      },
+      {
+        "product": "Claude",
+        "model": "Sonnet 5.5",
+        "difference_pp": 60
+      }
+    ],
+    "mean_difference_pp": 26.666666666666668,
+    "systems_improved": 3,
+    "systems_N": 3,
+    "note": "Nevážený průměr úplných systémových rozdílů; bez testu významnosti."
+  }
+]

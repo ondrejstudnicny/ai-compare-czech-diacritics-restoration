@@ -1,0 +1,36 @@
+NÁVOD PRO HODNOTITELE – M2 (správnost zbytku věty)
+
+Otevři svůj soubor reviewer1.csv nebo reviewer2.csv v Excelu. U každého řádku vyplň:
+  decision:   pass nebo fail
+  reason:     jedna krátká věta proč
+
+Neraď se s druhým hodnotitelem, dokud oba nemáte hotovo. Neví se, který systém odpověď napsal.
+
+CO HODNOTÍŠ
+Jen zbytek věty MIMO hranaté závorky [a|b]. Jestli je v závorkách správná množina
+podob, se neřeší (to měří M1 automaticky).
+
+pass = zbytek věty je správná čeština:
+  - diakritika, pravopis (i/y), interpunkce a velká písmena jsou v pořádku;
+  - slova i pořadí slov odpovídají vstupu, nic nepřibylo ani nechybí;
+  - koncovky a tvary slov nejsou změněné;
+  - odchylka od reference je v pořádku, pokud je to také přípustná podoba
+    (např. čárka, která v češtině může i nemusí být).
+
+fail = cokoli z toho:
+  - chybějící nebo špatná diakritika (např. "spatne" místo "špatně");
+  - chyba v i/y nebo jiná pravopisná chyba;
+  - slovo nahrazené jiným, přidané, vynechané nebo přesunuté;
+  - změněný tvar slova (jiná koncovka, jiný pád nebo osoba).
+
+KOTVY (ilustrační příklady)
+  Vstup:    Dle obrazku byt nevypada spatne , ale to podstatne chybi.
+  pass:     Dle obrázku byt nevypadá špatně, ale to podstatné chybí.
+  fail:     Dle obrázku byt nevypadá spatně, ale to podstatné chybí.      (chybí háček)
+  fail:     Podle obrázku byt nevypadá špatně, ale to podstatné chybí.    (nahrazené slovo)
+  fail:     Dle obrázku byt nevypadá špatně, ale to podstatné tam chybí.  (přidané slovo)
+
+NESHODY
+Po převodu (python3 human_review.py prevod) vznikne disagreements.csv. Oba hodnotitelé
+se nad každou neshodou společně dohodnou a vyplní final_decision a final_reason.
+Pak se převod spustí znovu.

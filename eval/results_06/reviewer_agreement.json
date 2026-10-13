@@ -1,0 +1,15 @@
+[
+  {
+    "evaluators": [
+      "reviewer1",
+      "reviewer2"
+    ],
+    "dimension": "language_correction",
+    "N": 27,
+    "agreement": 0.9629629629629629,
+    "cohen_kappa": 0.8988764044943819,
+    "disagreements": [
+      "ChatGPT-P3-v2-test06-a1"
+    ]
+  }
+]
